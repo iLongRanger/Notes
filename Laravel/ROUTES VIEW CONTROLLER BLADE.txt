@@ -1,0 +1,34 @@
+packagist - php package repository 
+
+
+to create a new laravel project 
+go to bash 
+type
+composer create-project --prefer-dist laravel/laravel projectname (version of laravel eg 5.2.29)
+
+** ROUTE ** 
+
+route is a class which identify which view should be open
+
+double colon :: means the method is static 
+
+
+** Controller ** 
+
+deals with passing the data from the database to view 
+
+namespace - allows use same function name in different parts in the application without any problem
+
+use - same as import 
+
+--/ to create a new controller file using terminal 
+
+	** php artisan make:controller controllername 
+
+-/ to make a controller with a build in CRUD functions
+
+	** php artisan make:controller --resource controllername 
+	
+
+
+

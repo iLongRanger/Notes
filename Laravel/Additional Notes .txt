@@ -1,0 +1,49 @@
+
+	** to create relation
+		** add a function to the model (see video 5 on application lecture) 
+		
+	** to use tinker 
+		** php artisan tinker see tinker lectures
+
+	** 
+		*** Latest changes made on portal : 
+			-- installed npm 
+
+
+	** to display all data from a table (controller)
+	
+		** $tablename = model::all();
+
+	** to display time stamps as instance 
+
+		** -> diffForHumans()
+
+	** include laravel collective html/forms see https://laravelcollective.com/docs/5.4/html
+
+	** to use a drop down list on your input field (view)
+
+		** <div class="form-group">
+           		{!!Form::label('is_active', 'Status:')!!}
+           	        {!!Form::select('is_active', array(1=>'Active',0=>'Inactive'),null, ['class'=>'form-control'])!!}
+    		   </div> 
+		** where null can be set as a default value for your dropdown list just put the array index 
+
+	** to fetch data from database and use it on a drop down list (controller)
+
+		**  $roles = Role::pluck('name', 'id')->all();
+		** make sure to import the model
+		** then include it so that we can call it on view use compact() method 
+	
+	** to display values from database to view on drop down list (view)
+
+		** <div class="form-group">
+           		 {!!Form::label('role_id', 'Role:')!!}
+           		 {!!Form::select('role_id', [''=>'Choose Position'] + $roles, null, ['class'=>'form-control'])!!}
+    		   </div>
+
+
+	
+
+	
+
+	

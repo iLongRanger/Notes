@@ -1,0 +1,59 @@
+--/ .env file is where you configure the database connection 
+--/ migration is use to migrate database from laravel to database 
+
+
+	** to migrate 
+		
+		** php artisan migrate 
+
+		this will execute the codes under database > 
+		migrations > create user and create password php file 
+
+		** inside this classes are two methods :
+		
+			* up - which use to create the table 
+			* down - to drop the table 
+
+
+					*** STANDARDS ***
+			Name = 30 , Email/Codes = 100 , tokens/password = 120
+					    **********
+
+
+
+	** to create new migration file 
+
+		** php artisan make:migration create_post_table --create="name of the table"
+			PROPER WAY OF NAMING MIGRATION FILE A SHOWS
+
+	** to delete the last migration that you did 
+
+		** php artisan migrate:rollback
+
+
+	** add new column in existing table 
+
+		** php artisan make:migration add_is_admin_column_to_post_tables 
+		--table="name of the table you want to add column" 
+
+		** then add the name of the column on up and down method inside the created 		migration file	
+
+		** $table->typeofvariable('column name'); on up 
+		** $table->dropColumn('column name'); on down
+		** then migrate 
+ 
+	** to reset everything 
+
+		** php artisan migrate:reset
+		-- all created tables will be deleted, migration table will only remain 
+		since we keep track on migrations that we are doing
+
+	** to refresh : this will rollback migrations and will automatically migrate
+		
+		** php artisan migrate:refresh
+		
+
+	**  to check the status of the migration
+
+		** php artisan migrate:status
+	

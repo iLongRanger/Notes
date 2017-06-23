@@ -1,0 +1,48 @@
+Logs : for laravelReference 
+
+** Accomplished as of June 18,2017 ** 
+
+- created project 
+- created database for the project 
+- set lenght for email and token on migration file 
+- migrated database for users and password 
+- created authentication
+- created 1 folder with 3 subfolders :
+
+	- admin 
+		- categories
+			* index.blade.php
+			* edit.blade.php
+		- post
+			* index.blade.php
+			* edit.blade.php
+			* create.blade.php
+		- users
+			* index.blade.php
+			* edit.blade.php
+			* create.blade.php
+	*index.blade.php
+
+- saved project using git (see git folder for reference)
+- added role and is_active column on user migration file
+- created role migration model using make:model 
+- added name column on role model 
+- migrated database 
+- created role function on user model under providers folder 
+- inserted administrator, author and subscriber on role table
+- migrate:refresh
+- tested relationship using tinker 
+- created route for adminusers 
+- created AdminUsersController with resources 
+- added css, fonts and js file on public folder 
+- created admin.blade.php under layouts 
+- fixED admin template 
+- fixed padding and made commit 
+- fetch data from users table and displayed it on users index (see additional notes for functions)
+- created creating page for users
+- installed laravel collective files see additional notes 
+- change status field from textfield to dropdown (see additional notes for function)
+- populated data from database to drop down list (see additional notes for function)
+
+
+

@@ -1,0 +1,39 @@
+--/ Eloquent - allows to do database query with easy format 
+--/ Model - class that deals with database 
+
+	** to create a model
+		
+		** php artisan make:model Name 
+			** standard naming of model as shows
+			** this will show on Providers folder
+
+				******** RETRIEVE **********
+
+	** to retrive data from database like SLECT * FROM TABLENAME
+
+		** $variablename = ModelName::function (either all(); or other function) 
+		** or we can import the provider name on the controller after <?php
+		-- use App\ModelName
+
+	** to retrive data from database like Select * from table where id = 1 
+
+		** $varialename = modelname::find(this is where you put what you are looking for);
+		then return the variable name 
+
+	** to retrive with  condition
+
+		** $variableName = modelname::where('columnName', value)->orderBy('columnName', 'desc')-> take(1)->get();
+			return = $variableName;
+	
+	** to have an exception error 
+
+		** $variablename = modelname::findOrFail(coulum value);
+			return $variablename;
+
+				*****************************
+
+				********** INSERT ***********
+
+	
+ 
+		 
