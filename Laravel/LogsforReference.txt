@@ -50,7 +50,7 @@ Logs : for laravelReference
 - added file field on create user 
 - added enctype on create users ( see additional notes for function)
 - added upload field 
-- include role id and is active as well as photo id on user model for mass assignment (see notes )
+- include role id and is active as well as photo id on user model for mass assignment (see notes )..
 
 
 

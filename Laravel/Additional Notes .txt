@@ -54,7 +54,7 @@
 	** Mass assignment 
 
 		** if data from view is not being save on the database make sure that it is included on the fillable function on user model
-	
+	..
 		
 
 
