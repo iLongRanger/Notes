@@ -43,6 +43,15 @@ Logs : for laravelReference
 - installed laravel collective files see additional notes 
 - change status field from textfield to dropdown (see additional notes for function)
 - populated data from database to drop down list (see additional notes for function)
+- created a password field
+- created a Request file for User Creation
+- added error message when required fields are not satisfied
+- created migration file for photo_id on user  
+- added file field on create user 
+- added enctype on create users ( see additional notes for function)
+- added upload field 
+- include role id and is active as well as photo id on user model for mass assignment (see notes )
+
 
 
 

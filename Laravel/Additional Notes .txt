@@ -41,6 +41,22 @@
            		 {!!Form::select('role_id', [''=>'Choose Position'] + $roles, null, ['class'=>'form-control'])!!}
     		   </div>
 
+	** to create a request (under http) 
+	
+		** php artisan make:request “RequestName”
+		** this is where you put your restriction  if what is required or not 
+
+	** to add the enctype 
+
+		** simply add ‘files’=> true on form open 
+		** this will allow us to upload pictures
+
+	** Mass assignment 
+
+		** if data from view is not being save on the database make sure that it is included on the fillable function on user model
+	
+		
+
 
 	
 
