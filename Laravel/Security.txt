@@ -1,0 +1,5 @@
+******************LARAVEL SECURITY*******************
+
+	** to create a middleware 
+		
+		** php artisan make:middleware Admin

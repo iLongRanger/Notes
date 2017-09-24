@@ -51,7 +51,17 @@ Logs : for laravelReference
 - added enctype on create users ( see additional notes for function)
 - added upload field 
 - include role id and is active as well as photo id on user model for mass assignment (see notes )..
-
-
-
-
+- created photo model
+- created relationship for user and photo
+- fixed links for users
+- added photo valideation if its existed on create user function
+- added password encryption on create user function
+- photos will be save on public>images
+- fixed table data on users 
+- created accesors for images to display them properly on the table (on Photo model)
+- created edit function for users
+- added link to edit user data / be mindful about routing data 
+- added profile picture on edit view 
+- created a new request for UsersEditRequest
+- remove password on edit user
+- added security for admin see security notes (not quite done)
