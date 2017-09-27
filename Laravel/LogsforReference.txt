@@ -63,5 +63,11 @@ Logs : for laravelReference
 - added link to edit user data / be mindful about routing data 
 - added profile picture on edit view 
 - created a new request for UsersEditRequest
-- remove password on edit user
-- added security for admin see security notes (not quite done)
+- added security for admin (created middleware "admin")
+- register middleware to kernel 
+- created route group for admin
+- created a validation to check if the  user is administrator under User model+
+- created custom 404 file and 503
+- fixed log out fucntion 
+- fixed delete functionality
+- added alert messages 

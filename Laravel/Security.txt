@@ -3,3 +3,6 @@
 	** to create a middleware 
 		
 		** php artisan make:middleware Admin
+		** after creating the middleware we need to register it on
+		   >APP\HTTP\REQUEST\KERNEL.PHP
+		** this is to check wheter the user is active or not (if the user is 		allowed to access the admin page)
