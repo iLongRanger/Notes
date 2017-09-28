@@ -71,3 +71,4 @@ Logs : for laravelReference
 - fixed log out fucntion 
 - fixed delete functionality
 - added alert messages 
+- added middleware for identifying if user is logged in before accessing a specific page
